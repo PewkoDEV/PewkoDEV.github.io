@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>The Last Hold – Pewko Interactive</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <style>
+        .game-page {
+            max-width: 800px;
+            margin: auto;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .game-poster {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 2rem auto;
+            border-radius: 8px;
+        }
+        .features {
+            text-align: left;
+            margin: 2rem auto;
+            color: #ccc;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        .status-box {
+            border: 1px solid #555;
+            padding: 1rem;
+            margin-top: 2rem;
+            color: #aaa;
+            font-style: italic;
+        }
+        .back-link {
+            margin-top: 3rem;
+            display: inline-block;
+            color: #d9b87d;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-logo">
+        <img src="../images/logo.png" alt="Logo Intro" class="intro-image" />
+    </div>
+
+    <div class="site-content">
+        
+<header class="main-header">
+    <div class="header-inner">
+        <a href="../index.html" class="logo-block">
+            <img src="../images/logo.png" alt="Pewko Logo" class="logo" />
+            <h1 class="studio-name">Pewko Interactive</h1>
+        </a>        
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="the-last-hold.html">Jeux</a></li>
+                <li><a href="../a-propos/a-propos.html">À propos</a></li>
+                <li><a href="../news/news.html">News</a></li>
+                <li><a href="../carriere/carriere.html">Carrières</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>  
+    </div>
+</header>
+
+
+        <div class="game-page">
+            <h1>The Last Hold</h1>
+            <p><em>Un jeu narratif et stratégique à la première personne.<br>Ce n’est pas une question de victoire. C’est une question de survie.</em></p>
+            
+            <img src="../images/the_last_hold_poster.jpg" alt="Affiche The Last Hold" class="game-poster">
+
+            <p><strong>The Last Hold</strong> vous place dans la peau d’un <strong>jeune seigneur inexpérimenté</strong>, propulsé malgré lui à la tête d’un château assiégé.</p>
+            <p>La famine s’installe. Les réserves s’amenuisent. Les tensions montent entre les différentes factions enfermées entre les murs. Et au-dehors, l’ennemi attend, prêt à frapper.</p>
+            <p>Vous ne pouvez compter ni sur votre nom, ni sur votre passé. Seules vos décisions écrites dans l’urgence forgeront votre légitimité.</p>
+            <p>Chaque jour compte. Chaque choix a des conséquences. Et quoi que vous protégiez… <strong>ce que vous défendrez ne sera jamais intact.</strong></p>
+
+            <div class="features">
+                <h3>Principales mécaniques :</h3>
+                <ul>
+                    <li>Vue à la première personne pour une immersion maximale</li>
+                    <li>Gestion simplifiée mais stratégique des ressources et des factions</li>
+                    <li>Choix narratifs lourds de conséquences</li>
+                    <li>Événements dynamiques influencés par vos décisions</li>
+                    <li>Fin multiple selon vos actions</li>
+                    <li>Pas de bons ou de mauvais choix, seulement des compromis</li>
+                </ul>
+            </div>
+
+            <div class="status-box">
+                <strong>Statut :</strong> En développement<br>
+                <strong>Prototype prévu pour :</strong> 2025
+            </div>
+
+            <a href="../index.html" class="back-link">← Retour à l'accueil</a>
+        </div>
+
+        
+<footer>
+    &copy; 2025 Pewko Interactive. All rights reserved.
+</footer>
+
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const intro = document.querySelector('.intro-logo');
+                if (intro) intro.classList.add('hide');
+            }, 2500);
+            setTimeout(() => {
+                const content = document.querySelector('.site-content');
+                if (content) content.classList.add('visible');
+            }, 2800);
+        });
+    </script>
+</body>
+</html>

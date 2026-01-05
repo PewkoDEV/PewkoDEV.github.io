@@ -1,200 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Pewko Studios — Independent Game Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pewko Studios is an independent game studio creating handcrafted game experiences. Made in Belgium.">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #f4f1ec;
-      --text: #1a1a1a;
-      --muted: #6e6e6e;
-      --accent: #6f1d1b;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, sans-serif;
-      background:
-        radial-gradient(circle at top, #ffffff 0%, var(--bg) 60%);
-      color: var(--text);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image: url("https://grainy-gradients.vercel.app/noise.svg");
-      opacity: 0.05;
-      pointer-events: none;
-      z-index: 999;
-    }
-
-    section {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 120px 24px;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.6rem;
-      font-weight: 500;
-      margin: 0 0 24px 0;
-    }
-
-    h2 {
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 32px;
-    }
-
-    p {
-      margin: 0 0 24px 0;
-      font-size: 1rem;
-    }
-
-    strong {
-      font-weight: 500;
-      color: var(--accent);
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .hero p {
-      font-size: 1.15rem;
-      max-width: 420px;
-    }
-
-    .muted {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 60px 20px 80px;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(0,0,0,0.15);
-    }
-
-    a:hover {
-      border-color: var(--accent);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.6rem;
-      }
-
-      section {
-        padding: 90px 20px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pewko Interactive</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
 </head>
-
 <body>
+    <div class="intro-logo">
+        <img src="/images/logo.png" alt="Logo Intro" class="intro-image" />
+    </div>
 
-  <section class="hero">
-    <h1>Pewko Studios</h1>
-    <p>We make games because we care about them.</p>
-    <p class="muted">Independent game studio — Belgium</p>
-  </section>
+    <div class="site-content">
+        <header class="main-header">
+            <div class="header-inner">
+                <a href="/" class="logo-block">
+                    <img src="/images/logo.png" alt="Pewko Logo" class="logo" />
+                    <h1 class="studio-name">Pewko Interactive</h1>
+                </a>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="/jeux/the-last-hold.html">Jeux</a></li>
+                        <li><a href="/a-propos/a-propos.html">À propos</a></li>
+                        <li><a href="/news/news.html">News</a></li>
+                        <li><a href="/carriere/carriere.html">Carrières</a></li>
+                        <li><a href="/contact/contact.html">Contact</a></li>
+                    </ul>
+                </nav>        
+            </div>
+        </header>
 
-  <section>
-    <p>
-      Pewko Studios is a small independent game studio.
-      We focus on games that take their time, respect the player,
-      and try to do something honest rather than something loud.
-    </p>
-  </section>
+        <section class="vision">
+            <h2>Notre vision</h2>
+            <p>À Pewko Interactive, nous créons des jeux narratifs forts, immersifs et chargés de sens. Nous croyons au pouvoir de la narration interactive pour faire vivre des émotions mémorables aux joueurs.</p>
+        </section>
 
-  <section>
-    <p>
-      We work on original projects, built with care and patience.
-      Our goal isn’t to chase trends, but to craft worlds,
-      systems, and stories that feel intentional and grounded.
-    </p>
+        <section class="about">
+            <h2>À propos du studio</h2>
+            <p>Pewko Interactive est un studio indépendant basé en Belgique, fondé en 2025. Notre objectif est de créer des jeux ambitieux portés par une vision artistique forte, une narration engageante et une vraie attention portée aux choix du joueur.</p>
+        </section>
 
-    <p class="muted">
-      independent · small team · unreal engine · narrative-driven · systems first
-    </p>
-  </section>
+        <section class="game-highlight">
+            <h2>Notre premier jeu : The Last Hold</h2>
+            <p class="game-desc">The Last Hold est un jeu narratif et stratégique à la première personne. Gérez un château assiégé pendant 30 jours, prenez des décisions difficiles, et survivez aux trahisons comme à la famine.</p>
+            <a href="jeux/the-last-hold.html">
+                <img src="/images/the_last_hold_poster.jpg" alt="Affiche The Last Hold" class="poster clickable"/>
+            </a>
+            <div>
+                <a href="jeux/the-last-hold.html">
+                    <button class="cta">En savoir plus</button>
+                </a>
+            </div>
+            
+        </section>
 
-  <section>
-    <h2>what we care about</h2>
+        <footer>
+            &copy; 2025 Pewko Interactive. All rights reserved.
+        </footer>
+    </div>
 
-    <p>
-      <strong>Handcrafted experiences.</strong><br>
-      Mechanics and narrative should support each other.
-    </p>
-
-    <p>
-      <strong>Player respect.</strong><br>
-      No filler. No noise. Design that trusts the player.
-    </p>
-
-    <p>
-      <strong>Long-term vision.</strong><br>
-      Slow progress done right beats fast releases done wrong.
-    </p>
-  </section>
-
-  <section>
-    <p>
-      We’re currently working on unannounced projects.<br>
-      They’ll be ready when they’re ready.
-    </p>
-
-    <p class="muted">
-      We’ll talk about them when there’s something worth showing.
-    </p>
-  </section>
-
-  <section>
-    <p>Want to get in touch?</p>
-    <p><strong>contact@pewko.be</strong></p>
-    <p class="muted">
-      Players, press, collaborators — you’re welcome.
-    </p>
-  </section>
-
-  <footer>
-    © Pewko Studios — Independent game studio<br>
-    Made in Belgium
-  </footer>
-
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.querySelector('.intro-logo').classList.add('hide');
+        }, 2500);
+        setTimeout(() => {
+            document.querySelector('.site-content').classList.add('visible');
+        }, 2800);
+    });
+</script>
 </body>
 </html>
