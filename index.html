@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pewko Studios</title>
+  <script>
+    // Détecte la langue du navigateur
+    const userLang = navigator.language || navigator.userLanguage; 
+    if (userLang.startsWith('fr')) {
+      window.location.href = 'FR/index.html';
+    } else {
+      window.location.href = 'EN/index.html';
+    }
+  </script>
+</head>
+<body>
+  <p>Redirection vers votre langue…</p>
+  <p><a href="FR/index.html">Français</a> | <a href="EN/index.html">English</a></p>
+</body>
+</html>
